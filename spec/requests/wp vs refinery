@@ -1,0 +1,28 @@
+5.2 Overriding your first view
+Refinery comes with a rake task called refinery:override which allows you to copy files out of Refinery and into your own application to change.
+
+ $ rake refinery:override view=refinery/pages/show
+    create  app/views/refinery/pages/show.html.erb
+
+    6.2 Generating an extension
+    Refinery ships with an extension generator that makes adding your own functionality a breeze. It works just like the Rails scaffold generator.
+
+     $ rails generate refinery:engine singular_model_name attribute:type [attribute
+
+
+     WORDPRESS
+
+     - wordpress is designed for blogs
+     - security issues, plugins not standardized
+     - hard to customize, pages breaking.
+
+     DRUPAL
+
+     - Drupal takes more configuration but its extendability is great
+     -It is a more professional platform in my opinion in terms of security like modules
+
+     REFINERY
+
+     - Will meet our needs because we have complete control over javascript, controllers, and app code
+     - refinery ships with extension generator rails (generate refinery:engine)
+     - rake task to copy out files of Refinery and into your own app to change. (rake refinery:override)
