@@ -2,19 +2,17 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "application", media: "all",
+                               "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
   </head>
   <body>
-    <header>
-      <ul class="nav nav-tabs">
-        <li><%= link_to "Home",'home' %></li>
-        <li><%= link_to "Help",'help' %></li>
-        <li><%= link_to "About",'about' %></li>
-        <li><%= link_to "Contact",'contact' %></li>
-      </ul>
-    </header>
-    <%= yield %>
+  <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>
