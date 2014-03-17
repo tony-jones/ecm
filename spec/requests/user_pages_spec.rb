@@ -6,8 +6,9 @@ describe "User pages" do
 
   describe "signup page" do
     before { visit signup_path }
+    let(:heading)    { 'Sign Up' }
+    let(:page_title) { 'Sign Up' }
 
-    it { should have_content('Sign up') }
-    it { should have_title(full_title('Sign up')) }
   end
 end
+

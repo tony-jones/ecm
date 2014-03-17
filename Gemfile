@@ -9,6 +9,9 @@ gem 'sqlite3'
 #  Use to test web app by simulating user/browser interaction
 gem 'capybara'
 
+#function to transform the password and make the password hash.
+gem 'bcrypt-ruby', '3.1.2'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -20,6 +23,9 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+gem 'protected_attributes'
+gem 'devise', '3.0.0.rc'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
