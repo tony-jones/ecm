@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.3'
 
 # gem to enable all platform features
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 #  Use to test web app by simulating user/browser interaction
 gem 'capybara'
