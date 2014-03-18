@@ -24,7 +24,7 @@ group :assets do
   gem 'uglifier', '1.3.0' # Use Uglifier as compressor for JavaScript assets
 end
 
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '2.1'
 
 # gem to enable all platform features
 # gem 'rails_12factor', group: :productionx
