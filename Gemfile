@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
+
+# gem to enable all platform features
+gem 'rails_12factor'
 
 #  Use to test web app by simulating user/browser interaction
 gem 'capybara'
@@ -66,3 +70,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+# Ruby version
+ruby "2.1.1"
