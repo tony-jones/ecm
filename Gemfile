@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 #  Use to test web app by simulating user/browser interaction
 gem 'capybara'
 
@@ -36,18 +33,21 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 
   # Ruby gem produced by the good people at ThoughtBot.
   # As with RSpec, Factory Girl defines a domain-specific
   # language in Ruby,in this case specialized for defining
   # Active Record objects. User Factories
   gem 'factory_girl_rails', '4.1.0'
-end
-
-group :production do
-  gem 'pg', '0.12.2'
 end
 
 group :doc do

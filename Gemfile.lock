@@ -164,7 +164,7 @@ DEPENDENCIES
   factory_girl_rails (= 4.1.0)
   jbuilder (~> 1.2)
   jquery-rails
-  pg (= 0.12.2)
+  pg
   protected_attributes
   rails (= 4.0.3)
   rspec-rails (~> 3.0.0.beta)
