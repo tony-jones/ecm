@@ -17,7 +17,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '4.0.0'  # Use SCSS for stylesheets
+  gem "sass-rails", "~> 4.0.2" # Use SCSS for stylesheets
   gem 'coffee-rails', '4.0.0' # Use CoffeeScript for .js.coffee assets and views
   gem 'uglifier', '1.3.0' # Use Uglifier as compressor for JavaScript assets
 end
@@ -47,6 +47,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
