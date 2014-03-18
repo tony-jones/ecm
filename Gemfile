@@ -38,6 +38,12 @@ gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+
+  # Ruby gem produced by the good people at ThoughtBot.
+  # As with RSpec, Factory Girl defines a domain-specific
+  # language in Ruby,in this case specialized for defining
+  # Active Record objects. User Factories
+  gem 'factory_girl_rails', '4.1.0'
 end
 
 group :doc do
