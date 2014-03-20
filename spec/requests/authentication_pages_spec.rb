@@ -70,6 +70,20 @@ describe "Authentication" do
         end
       end
 
+      describe "when signing in again" do
+        before do
+          delete signout_path
+          visit signin_path
+          fill_in "Email",    with: user.email
+          fill_in "Password", with: user.password
+          click_button "Sign in"
+        end
+
+        it "should render the default (profile) page" do
+          page.should have_selector('title', text: user.name)
+        end
+      end
+
       describe "in the Users controller" do
 
         describe "visiting the edit page" do
