@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.3'
-gem 'bootstrap-sass', '2.1'
+# gem 'bootstrap-sass', '2.1'
+gem 'bootstrap-sass', '3.1.1'
+gem "sass-rails", '4.0.2' # Use SCSS for stylesheets
 gem 'bcrypt-ruby', '3.1.2'
 gem 'sprockets'
 gem 'rspec-its'
@@ -19,13 +21,12 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # specialized for defining Active Record objects. User Factories
-  gem 'factory_girl_rails', '4.1.0'
+  gem 'factory_girl_rails', '4.1.0',  :require => false
 end
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem "sass-rails", "~> 4.0.2" # Use SCSS for stylesheets
   gem 'coffee-rails', '4.0.0' # Use CoffeeScript for .js.coffee assets and views
   gem 'uglifier', '1.3.0' # Use Uglifier as compressor for JavaScript assets
 end
