@@ -23,6 +23,7 @@ module UserApp
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.initialize_on_precompile = false
     config.active_record.whitelist_attributes = true
   end
 end
