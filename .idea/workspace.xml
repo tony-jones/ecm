@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bee5d085-dfa8-45bf-8a4f-1d01af5bf879" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
     </list>
     <ignored path="user_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,19 +71,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="27" selection-start="2380" selection-end="2380" vertical-scroll-proportion="-23.4" vertical-offset="1410" max-vertical-offset="3165">
+            <state line="4" column="22" selection-start="101" selection-end="101" vertical-scroll-proportion="0.12448133" vertical-offset="0" max-vertical-offset="3165">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="5" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.6936416" vertical-offset="0" max-vertical-offset="525">
+            <state line="24" column="32" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -162,7 +163,6 @@
         <option value="$PROJECT_DIR$/spec/requests/user_pages_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/lib/tasks/sample_data.rake" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/models/micropost.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/requests/authentication_pages_spec.rb" />
@@ -190,6 +190,7 @@
         <option value="$PROJECT_DIR$/app/views/users/_fields.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       </list>
     </option>
   </component>
@@ -1144,16 +1145,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="27" selection-start="2380" selection-end="2380" vertical-scroll-proportion="-23.4" vertical-offset="1410" max-vertical-offset="3165">
+        <state line="24" column="32" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.6936416" vertical-offset="0" max-vertical-offset="525">
+        <state line="4" column="22" selection-start="101" selection-end="101" vertical-scroll-proportion="0.12448133" vertical-offset="0" max-vertical-offset="3165">
           <folding />
         </state>
       </provider>
