@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.3'
-# gem 'bootstrap-sass', '2.1'
-gem 'bootstrap-sass', '3.1.1'
+gem 'bootstrap-sass', '2.1'
+#gem 'bootstrap-sass', '3.1.1'
 gem "sass-rails", '4.0.2' # Use SCSS for stylesheets
 gem 'bcrypt-ruby', '3.1.2'
 gem 'sprockets'
