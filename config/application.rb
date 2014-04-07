@@ -24,5 +24,6 @@ module UserApp
     # Enable the asset pipeline
     config.assets.enabled = true
     config.active_record.whitelist_attributes = true
+    config.serve_static_assets = true
   end
 end
