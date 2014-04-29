@@ -1,5 +1,4 @@
 UserApp::Application.routes.draw do
-  mount RailsAdmin::Engine => '/admin518', as: 'rails_admin'
   resources :users do
     member do
       get :following, :followers
