@@ -188,8 +188,12 @@ input {
 }
 
 .field_with_errors {
-  @extend .control-group;
-  @extend .error;
+  @extend .form-control;
+  @extend .has-error;
+}
+
+.form-control, .field_with_errors {
+  border-bottom: 1px solid #ff0000;
 }
 
 /* users index */
@@ -670,4 +674,9 @@ form.login p {
 
 .counter {
   padding-bottom:10px;
+}
+
+form.login input[type="text"]:focus, form.login input[type="password"]:focus {
+  border-color: #428bca;
+  outline: 0;
 }

@@ -9,13 +9,15 @@ gem 'sprockets'
 gem 'jquery-turbolinks'
 gem 'rspec-its'
 gem 'faker', '1.0.1'
-gem 'will_paginate', '3.0.3'
+gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'protected_attributes'
 gem 'devise', '3.0.0.rc'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
+gem "phrasing"
+gem 'rails_admin'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'

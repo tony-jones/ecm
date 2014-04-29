@@ -16,8 +16,12 @@
 //= require_tree .
 //= require bootstrap
 //= require turbolinks
+//= require phrasing
 
 $(document).ready(function(){
+    $(".field_with_errors").change(function() {
+        RemoveClass('field_with_errors');
+    });
     var my_posts = $("[rel=tooltip]");
 
     var size = $(window).width();
