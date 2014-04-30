@@ -16,6 +16,7 @@ gem 'devise', '3.0.0.rc'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
+gem 'rails_admin'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
