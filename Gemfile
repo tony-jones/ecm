@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.3'
 gem 'bootstrap-sass', '~> 3.1.1'  # sass-rails needs to be higher than 3.2
-gem "font-awesome-rails"
+gem 'font-awesome-sass'
 gem "sass-rails", '4.0.2' # Use SCSS for stylesheets
 gem 'bcrypt-ruby', '3.1.2'
 gem 'sprockets'

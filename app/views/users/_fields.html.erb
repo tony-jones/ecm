@@ -1,9 +1,21 @@
 <%= render 'shared/error_messages', object: f.object %>
 
-<%= f.text_field :name, placeholder: 'Name' %>
-
-<%= f.text_field :email, placeholder: 'Email' %>
-
-<%= f.password_field :password, placeholder: 'Password' %>
-
-<%= f.password_field :password_confirmation, placeholder: 'Confirm Password' %>
+<div class="list-group">
+  <div class="list-group-item">
+    <%= f.text_field :name, placeholder: 'Name', class: 'form-control no-border' %>
+  </div>
+  <div class="list-group-item">
+    <%= f.text_field :email, placeholder: 'Email', class: 'form-control no-border' %>
+  </div>
+  <div class="list-group-item">
+    <%= f.password_field :password, placeholder: 'Password' , class: 'form-control no-border' %>
+  </div>
+  <div class="list-group-item">
+    <%= f.password_field :password_confirmation, placeholder: 'Confirm Password', class: 'form-control no-border' %>
+  </div>
+</div>
+<div class="checkbox m-b">
+  <label>
+    <input type="checkbox">
+    Agree the <a href="#">terms and policy</a> </label>
+</div>

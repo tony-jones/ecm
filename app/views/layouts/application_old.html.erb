@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="app">
+<html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag    "application", media: "all",
                                "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= yield :head %>
     <%= render 'layouts/shim' %>
   </head>
   <body>
-  <% if signed_in? %>
-    <section class="vbox">
-      <%= render 'layouts/header' %>
-      <%= render 'layouts/sidebar' %>
-    </section>
-  <% else %>
-      <%= render 'layouts/homeHeader' %>
-      <%= render 'layouts/homeContent' %>
-  <% end %>
+  <%= render 'layouts/header' %>
+    <div class="container">
+      <% flash.each do |key, value| %>
+          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+      <% end %>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.testing? %>
+    </div>
   </body>
 </html>

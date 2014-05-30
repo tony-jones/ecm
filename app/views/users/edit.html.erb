@@ -1,25 +1,45 @@
 <% provide(:title, "Edit user") %>
-<h1>Update your profile</h1>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@user, :html => {:class => 'login'}) do |f| %>
-        <%= render 'shared/error_messages', object: f.object %>
-
-        <%= f.text_field :name, placeholder: 'Name' %>
-
-        <%= f.text_field :email, placeholder: 'Email' %>
-
-        <%= f.password_field :password, placeholder: 'Password' %>
-
-        <%= f.password_field :password_confirmation, placeholder: 'Confirm Password' %>
-
-        <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
-        <hr />
-        <%= gravatar_for @user %>
-        <a href="http://gravatar.com/emails">change</a>
-    <% end %>
-
-
-  </div>
+<div class="col-sm-6">
+  <section class="panel panel-default">
+    <header class="panel-heading font-bold">Your Information</header>
+    <div class="panel-body">
+      <%= form_for(@user, :html => {:class => 'bs-example form-horizontal'}) do |f| %>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-10">
+            <%= f.text_field :name, placeholder: 'Name', class:"form-control" %>
+            <span class="help-block m-b-none">Example block-level help text here.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">Email</label>
+          <div class="col-lg-10">
+            <%= f.text_field :email, placeholder: 'Email', class:"form-control", type: "email" %>
+            <span class="help-block m-b-none">Example block-level help text here.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">Password</label>
+          <div class="col-lg-10">
+            <%= f.password_field :password, placeholder: 'Password', class:"form-control" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">Confirm Password</label>
+          <div class="col-lg-10">
+            <%= f.password_field :password_confirmation, placeholder: 'Confirm Password', class:"form-control" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10">
+            <%= f.submit "Save changes", class: "btn btn-sm btn-default" %>
+          </div>
+        </div>
+          <hr />
+          <%= gravatar_for @user %>
+          <a href="http://gravatar.com/emails">change</a>
+      <% end %>
+    </div>
+  </section>
 </div>

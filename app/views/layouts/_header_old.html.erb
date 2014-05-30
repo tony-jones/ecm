@@ -1,0 +1,46 @@
+<div id="section-topbar">
+  <div id="topbar-inner">
+    <div class="container">
+      <%= link_to "sydster (beta)", root_path, id: "logo" %>
+      <div class="row">
+        <div class="dropdown">
+          <ul id="nav" class="nav">
+            <li>
+              <%= link_to root_path do %>
+                <i class="fa fa-home"></i>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to help_path do %>
+                  <i class="fa fa-search"></i>
+              <% end %>
+            </li>
+            <% if signed_in? %>
+                <li>
+                  <%= link_to users_path do %>
+                      <i class="fa fa-users"></i>
+                  <% end %>
+                </li>
+
+                <li>
+                  <%= link_to edit_user_path(current_user) do %>
+                      <i class="fa fa-cogs"></i>
+                  <% end %>
+                </li>
+                <li class="menu-text">
+                  <%= link_to "Sign out", signout_path, method: "delete" %>
+                </li>
+                <% else %>
+                    <li class="menu-text"><%= link_to "Sign in", signin_path %></li>
+                <% end %>
+          </ul><!--/ uL#nav -->
+        </div><!-- /.dropdown -->
+
+        <div class="clear"></div>
+      </div><!--/.row -->
+    </div><!--/.container -->
+
+    <div class="clear"></div>
+  </div><!--/ #topbar-inner -->
+</div><!--/ #section-topbar -->
+<br />

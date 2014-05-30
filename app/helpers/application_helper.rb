@@ -2,7 +2,7 @@ module ApplicationHelper
 
   # Returns the full title on a per-page basis.
   def full_title(page_title)
-    base_title = "University of Virginia Library"
+    base_title = "ECM Real Estate Services"
     if page_title.empty?
       base_title
     else
